@@ -7,13 +7,6 @@ function getElement(id) {
   return element;
 }
 
-// getElement("cart-box").addEventListener("click", function (e) {
-//   if (e.target.className.includes("call-btn")) {
-//     const cartButton = e.target;
-//     console.log(cartButton);
-//   }
-// });
-
 const cartButton = document.getElementsByClassName("call-btn");
 
 for (let cartbtn of cartButton) {
