@@ -70,3 +70,15 @@ document.getElementById("btn-clear").addEventListener("click", function () {
   const callhistoryConatiner = getElement("call-history-container");
   callhistoryConatiner.innerHTML = "";
 });
+
+// heart count
+
+const heartButtons = document.getElementsByClassName("heart-btn");
+for (let heartbutton of heartButtons) {
+  heartbutton.addEventListener("click", function () {
+    const heartCount = getElement("heartCount");
+    let currentHeart = parseInt(heartCount.innerText);
+    currentHeart++;
+    heartCount.innerText = currentHeart;
+  });
+}

@@ -39,10 +39,10 @@
   <body class="font bg-[#F5FFF6]">
     <!-- navber section  -->
     <nav
-      class="flex flex-col sm:flex-row justify-between md:items-center bg-white  mx-auto px-10"
+      class="flex flex-col sm:flex-row justify-between md:items-center bg-white  mx-auto md:px-10 px-4 md:m-0 pt-5"
     >
       <div class="flex justify-start md:justify-center items-center gap-2 ">
-        <img src="./assets/logo.png" alt="" class="w-[45px]" />
+        <img src="./assets/logo.png" alt="" class="w-[45px] " />
         <div>
           <h2 class="font-extrabold text-[#006747] hidden sm:block">
             Emergency <br />
@@ -56,21 +56,21 @@
       <!-- heart count -->
       <div class="flex gap-3">
         <div
-          class="flex items-center gap-2 rounded-3xl bg-[#41FF6B]/10 my-6 px-7 py-3"
+          class="flex items-center gap-2 md:rounded-3xl rounded-xl bg-[#41FF6B]/10 md:my-6 my-9 px-7 py-3"
         >
           <span id="heartCount" class="font-medium text-[20px] inter">0</span>
           <img src="./assets/heart.png" alt="" class="w-6" />
         </div>
         <!-- Coin count -->
         <div
-          class="flex items-center gap-2 rounded-3xl bg-[#41FF6B]/10 my-6 px-7 py-3"
+          class="flex items-center gap-2 md:rounded-3xl rounded-xl bg-[#41FF6B]/10 md:my-6 my-9 px-7 py-3"
         >
           <img src="./assets/coin.png" alt="" class="w-6" />
           <span id="coinCount" class="font-medium text-[20px] inter">100</span>
         </div>
         <!-- Copy count -->
         <div
-          class="flex items-center gap-2 md:rounded-3xl rounded-2xl bg-[#00A63E] my-6 px-7 py-3 text-amber-50 font-medium"
+          class="flex items-center gap-2 md:rounded-3xl rounded-xl  bg-[#00A63E] md:my-6 my-9 px-7 py-3 text-amber-50 font-medium"
         >
           <span id="copyCount" class="text-[20px]">2</span>
           <p>Copy</p>
@@ -83,11 +83,11 @@
       class="flex justify-center items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] md:py-8 md:mt-0 py-5 mt-5" 
     >
       <div class="text-center">
-        <img src="./assets/logo-dark.png" alt="" class="w-[68px] mx-auto" />
-        <h1 class="text-amber-50 font-bold text-2xl m-2">
+        <img src="./assets/logo-dark.png" alt="" class="md:w-[68px] mx-auto w-[55px]" />
+        <h1 class="text-amber-50 font-bold md:text-2xl text-xl m-2">
           Emergency Service Directory
         </h1>
-        <h4 class="text-amber-50 text-base mt-2 sm:text-sm mx-auto">
+        <h4 class="text-amber-50 text-base mt-2 md:text-sm text-[10px] mx-auto pl-5">
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </h4>
@@ -95,13 +95,13 @@
     </section>
 
     <!-- card section -->
-    <section class="md:m-9 grid grid-cols-12 gap-2 m-8 " >
+    <section class="md:m-9 grid grid-cols-12 m-8 " >
       <div class="col-span-12 md:col-span-9 grid md:grid-cols-3 grid-cols-1 order-1 " id="cart-box">
-        <div class="card md:w-80 bg-base-100 shadow-sm w-78 mb-5">
+        <div class="card md:w-84 bg-base-100 shadow-sm w-78 mb-5">
           <div class="card-body">
            <div class="flex justify-between items-center ">
             <img src="./assets/emergency.png" alt="" class="w-[38px] bg-[#FFE3E2] p-2 rounded-[7px]">
-           <span class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px]"> <i class="fa-regular fa-heart "></i></span>
+           <span class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px] heart-btn "> <i class="fa-regular fa-heart "></i></span>
            </div>
             <div>
               <h3 class="text-[18px] font-semibold mt-1">National Emergency Number</h2>
@@ -117,11 +117,11 @@
             </div>
           </div>
         </div>
-        <div class="card md:w-80 bg-base-100 shadow-sm w-78 mb-5">
+        <div class="card md:w-84 bg-base-100 shadow-sm w-78 mb-5">
           <div class="card-body">
            <div class="flex justify-between items-center ">
             <img src="./assets/police.png" alt="" class="w-[40px] bg-[#DFEFFF] p-1 rounded-[7px]">
-           <span class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px]"> <i class="fa-regular fa-heart "></i></span>
+           <span class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px] heart-btn "> <i class="fa-regular fa-heart "></i></span>
            </div>
             <div>
               <h3 class="text-[18px] font-semibold mt-1">Police Help Line</h2>
@@ -137,11 +137,11 @@
             </div>
           </div>
         </div>
-        <div class="card md:w-80 bg-base-100 shadow-sm w-78 mb-5">
+        <div class="card md:w-84 bg-base-100 shadow-sm w-78 mb-5">
           <div class="card-body">
            <div class="flex justify-between items-center ">
             <img src="./assets/fire-service.png" alt="" class="w-[38px] bg-[#FFE3E2] p-2 rounded-[7px]">
-           <span class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px]"> <i class="fa-regular fa-heart "></i></span>
+           <span  class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px] heart-btn"> <i class="fa-regular fa-heart "></i></span>
            </div>
             <div>
               <h3 class="text-[18px] font-semibold mt-1">Fire Service Number</h2>
@@ -157,11 +157,11 @@
             </div>
           </div>
         </div>
-        <div class="card md:w-80 bg-base-100 shadow-sm w-78 mb-5">
+        <div class="card md:w-84 bg-base-100 shadow-sm w-78 mb-5">
           <div class="card-body">
            <div class="flex justify-between items-center ">
             <img src="./assets/ambulance.png" alt="" class="w-[40px] bg-[#FFE3E2] p-2 rounded-[7px]">
-           <span class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px]"> <i class="fa-regular fa-heart "></i></span>
+           <span    class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px] heart-btn"> <i class="fa-regular fa-heart "></i></span>
            </div>
             <div>
               <h3 class="text-[18px] font-semibold mt-1">Ambulance Service Number</h2>
@@ -177,11 +177,11 @@
             </div>
           </div>
         </div>
-        <div class="card md:w-80 bg-base-100 shadow-sm w-78 mb-5">
+        <div class="card md:w-84 bg-base-100 shadow-sm w-78 mb-5">
           <div class="card-body">
            <div class="flex justify-between items-center ">
             <img src="./assets/woman-holding-baby-her-arms_811553-7336-removebg-preview.png" alt="" class="w-[42px] bg-[#fae9d7] p-0 rounded-[7px]">
-           <span class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px]"> <i class="fa-regular fa-heart "></i></span>
+           <span  class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px] heart-btn"> <i class="fa-regular fa-heart "></i></span>
            </div>
             <div>
               <h3 class="text-[18px] font-semibold mt-1">Women & Child Helpline</h2>
@@ -197,11 +197,11 @@
             </div>
           </div>
         </div>
-        <div class="card md:w-80 bg-base-100 shadow-sm w-78 mb-5">
+        <div class="card md:w-84 bg-base-100 shadow-sm w-78 mb-5">
           <div class="card-body">
            <div class="flex justify-between items-center ">
             <img src="./assets/anti-coruption.png" alt="" class="w-[40px] bg-[#FFE3E2] p-1 rounded-[7px]">
-           <span class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px]"> <i class="fa-regular fa-heart "></i></span>
+           <span  class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px] heart-btn"> <i class="fa-regular fa-heart "></i></span>
            </div>
             <div>
               <h3 class="text-[18px] font-semibold mt-1">Anti-Corruption Helpline</h2>
@@ -217,11 +217,11 @@
             </div>
           </div>
         </div>
-        <div class="card md:w-80 bg-base-100 shadow-sm w-78 mb-5">
+        <div class="card md:w-84 bg-base-100 shadow-sm w-78 mb-5">
           <div class="card-body">
            <div class="flex justify-between items-center ">
             <img src="./assets/emergency.png" alt="" class="w-[38px] bg-[#FFE3E2] p-2 rounded-[7px]">
-           <span class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px]"> <i class="fa-regular fa-heart "></i></span>
+           <span   class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px] heart-btn"> <i class="fa-regular fa-heart "></i></span>
            </div>
             <div>
               <h3 class="text-[18px] font-semibold mt-1">Electricity Helpline</h2>
@@ -237,12 +237,12 @@
             </div>
           </div>
         </div>
-        <div class="card md:w-80 bg-base-100 shadow-sm w-78 mb-5">
+        <div class="card md:w-84 bg-base-100 shadow-sm w-78 mb-5">
           <div class="card-body">
            <div class="flex justify-between items-center ">
             <img src="./assets/brac.png" alt="" class="w-[40px] bg-[#FFE3E2] 
             p-1 rounded-[7px]">
-           <span class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px]"> <i class="fa-regular fa-heart "></i></span>
+           <span  class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px] heart-btn"> <i class="fa-regular fa-heart "></i></span>
            </div>
             <div>
               <h3 class="text-[18px] font-semibold mt-1">Brac Helpline</h2>
@@ -258,11 +258,11 @@
             </div>
           </div>
         </div>
-        <div class="card md:w-80 bg-base-100 shadow-sm w-78 mb-5">
+        <div class="card md:w-84 bg-base-100 shadow-sm w-78 mb-5">
           <div class="card-body">
            <div class="flex justify-between items-center ">
             <img src="./assets/Bangladesh-Railway.png" alt="" class="w-[40px] bg-[#fae9d7] p-2 rounded-[7px]">
-           <span class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px]"> <i class="fa-regular fa-heart "></i></span>
+           <span   class="hover:text-red-500 transition-colors duration-300 cursor-pointer text-[20px] heart-btn"> <i class="fa-regular fa-heart "></i></span>
            </div>
             <div>
               <h3 class="text-[18px] font-semibold mt-1">Bangladesh Railway Helpline</h2>
