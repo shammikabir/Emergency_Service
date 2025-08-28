@@ -60,7 +60,7 @@ for (let cartbtn of cartButton) {
 
       Callhistory.append(newCart);
     } else {
-      alert("Not Enough Coin to make a Call 💰  💰 ");
+      alert(" ❌ ❌ Not Enough Coin to make a Call  ");
     }
   });
 }
@@ -80,5 +80,28 @@ for (let heartbutton of heartButtons) {
     let currentHeart = parseInt(heartCount.innerText);
     currentHeart++;
     heartCount.innerText = currentHeart;
+  });
+}
+
+// copy button functionality
+
+const copybtns = document.getElementsByClassName("copy-btn");
+const copycount = getElement("copyCount");
+for (let copybtn of copybtns) {
+  copybtn.addEventListener("click", function () {
+    // get copytext
+    const copyText =
+      copybtn.parentNode.parentNode.childNodes[3].childNodes[5].innerText;
+    // copy text
+    navigator.clipboard
+      .writeText(copyText)
+      .then(() => {
+        alert(`Text copied: ${copyText}`);
+        copyCount++;
+        copycount.innerText = copyCount;
+      })
+      .catch(() => {
+        alert("Copy failed. Try manually!");
+      });
   });
 }
